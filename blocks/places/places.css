@@ -1,0 +1,13 @@
+.places {
+  max-width: calc(100% - 296px);
+  margin: 0 auto;
+  padding: 92px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: -webkit-min-content 80px -webkit-min-content 80px -webkit-min-content 80px -webkit-min-content 80px -webkit-min-content;
+  -ms-grid-rows: min-content 80px min-content 80px min-content 80px min-content 80px min-content;
+  -ms-grid-columns: 100%;
+  grid-template: repeat(5, -webkit-min-content)/100%;
+  grid-template: repeat(5, min-content)/100%;
+  gap: 80px;
+}
