@@ -1,0 +1,11 @@
+.intro {
+  margin: 92px auto 0 148px;
+  max-width: 690px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}

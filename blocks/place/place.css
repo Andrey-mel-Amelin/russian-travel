@@ -1,0 +1,16 @@
+.place {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr;
+  grid-template: -webkit-min-content min-content/repeat(2, 1fr);
+  grid-template: min-content min-content/repeat(2, 1fr);
+  
+  grid-template-areas: 
+  "title website"
+  "image paragraphs";
+  gap: 48px 40px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+}

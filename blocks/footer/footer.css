@@ -1,0 +1,9 @@
+.footer {
+  margin: 0 auto;
+  padding: 92px 0 24px;
+  width: calc(100% - 96px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}

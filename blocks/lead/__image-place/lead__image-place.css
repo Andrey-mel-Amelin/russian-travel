@@ -1,0 +1,7 @@
+.lead__image-place {
+  width: 100%;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  margin: 0;
+}
