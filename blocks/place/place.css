@@ -6,7 +6,6 @@
   display: -ms-grid;
   display: grid;
   gap: 48px 40px;
-  -ms-grid-columns: 1fr 40px 1fr;
   grid-template: -webkit-min-content min-content/repeat(2, 1fr);
   -ms-grid-columns: 1fr 40px 1fr;
   grid-template: min-content min-content/repeat(2, 1fr);
