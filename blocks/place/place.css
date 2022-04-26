@@ -1,17 +1,20 @@
 .place {
-  min-width: 100%;
+  width: 100%;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
   display: -ms-grid;
   display: grid;
   gap: 48px 40px;
   -ms-grid-columns: 1fr 40px 1fr;
   grid-template: -webkit-min-content min-content/repeat(2, 1fr);
+  -ms-grid-columns: 1fr 40px 1fr;
   grid-template: min-content min-content/repeat(2, 1fr);
   grid-template-areas: 
   "title website"
   "image paragraphs";
   height: -webkit-max-content;
   height: -moz-max-content;
-  height: max-content;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -29,6 +32,8 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .place {
     gap: 32px;
+    -ms-grid-columns: 1fr;
+    grid-template: repeat(4, -webkit-min-content)/1fr;
     grid-template: repeat(4, min-content)/1fr;
     grid-template-areas:
     "title"

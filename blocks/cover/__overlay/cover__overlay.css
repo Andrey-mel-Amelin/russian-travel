@@ -1,6 +1,6 @@
 .cover__overlay {
   width: 100%;
-  min-height: 740px;
+  height: 100%;
   background-color: rgba(42, 44, 47, 0.3);
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -20,22 +20,4 @@
   justify-content: center;
   text-decoration: none;
   color: white;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .cover__overlay {
-    min-height: 640px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .cover__overlay {
-    min-height: 480px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .cover__overlay {
-    min-height: 200px;
-  }
 }

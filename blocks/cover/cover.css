@@ -1,11 +1,12 @@
 .cover {
-  max-width: calc(100% - 7.5%);
+  width: calc(100% - 2 * 48px);
+  min-height: 740px;
   margin: 0 auto;
   background-image: url(../../images/cover/cover-trains.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 740px;
+  grid-area: cover-place;
 }
 
 .cover:hover .cover__overlay {
@@ -17,21 +18,20 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .cover {
-    max-width: 100%;
+    width: 100%;
     min-height: 640px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .cover {
-    max-width: 100%;
+    width: 100%;
     min-height: 480px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .cover {
-    max-width: 100%;
+    width: 100%;
     min-height: 200px;
   }
 }

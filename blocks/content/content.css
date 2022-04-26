@@ -1,0 +1,15 @@
+.content {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template: repeat(5, -webkit-min-content)/1fr;
+  grid-template: repeat(5, min-content)/1fr;
+  grid-template-areas: 
+  "lead"
+  "intro"
+  "photo-grid"
+  "places"
+  "cover-place";
+}
+
