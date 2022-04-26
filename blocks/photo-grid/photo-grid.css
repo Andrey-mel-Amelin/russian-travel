@@ -1,10 +1,10 @@
 .photo-grid {
-  display: -ms-grid;
-  display: grid;
-  max-width: calc(100% - 96px);
+  max-width: calc(100% - 7.5%);
   min-height: 671px;
   margin: 0 auto;
   padding: 92px 0;
+  display: -ms-grid;
+  display: grid;
   gap: 16px;
   -ms-grid-rows: minmax(-webkit-min-content, -webkit-max-content) 16px minmax(-webkit-min-content, -webkit-max-content) 16px minmax(-webkit-min-content, -webkit-max-content);
   -ms-grid-rows: minmax(min-content, max-content) 16px minmax(min-content, max-content) 16px minmax(min-content, max-content);
@@ -12,4 +12,30 @@
   -ms-grid-columns: minmax(min-content, max-content) 16px minmax(min-content, max-content) 16px minmax(min-content, max-content) 16px minmax(min-content, max-content);
   grid-template: repeat(3, minmax(-webkit-min-content, -webkit-max-content))/repeat(4, minmax(-webkit-min-content, -webkit-max-content));
   grid-template: repeat(3, minmax(min-content, max-content))/repeat(4, minmax(min-content, max-content));
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .photo-grid {
+    max-width: calc(100% - 9.375%);
+    grid-template: repeat(4, minmax(min-content, max-content))/repeat(3, minmax(min-content, max-content));
+    gap: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .photo-grid {
+    max-width: calc(100% - 6.25%);
+    grid-template: repeat(6, minmax(min-content, max-content))/repeat(2, minmax(min-content, max-content));
+    gap: 16px;
+    padding: 88px 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .photo-grid {
+    max-width: calc(100% - 10%);
+    grid-template: repeat(12, minmax(min-content, max-content))/repeat(1, minmax(min-content, max-content));
+    gap: 12px;
+    padding: 64px 0;
+  }
 }

@@ -10,3 +10,12 @@
   -o-transition: .2s;
   transition: .2s;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer__link {
+    padding-bottom: 32px;
+  }
+  .footer__link:last-of-type {
+    padding-bottom: 48px;
+  }
+}
