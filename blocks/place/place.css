@@ -6,9 +6,9 @@
   display: -ms-grid;
   display: grid;
   gap: 48px 40px;
-  grid-template: -webkit-min-content min-content/repeat(2, 1fr);
   -ms-grid-columns: 1fr 40px 1fr;
-  grid-template: min-content min-content/repeat(2, 1fr);
+  grid-template: repeat(2, -webkit-min-content)/repeat(2, 1fr);
+  grid-template: repeat(2, min-content)/repeat(2, 1fr);
   grid-template-areas: 
   "title website"
   "image paragraphs";
