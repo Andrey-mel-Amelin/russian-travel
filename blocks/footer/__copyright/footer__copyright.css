@@ -1,12 +1,14 @@
 .footer__copyright {
   margin: 0;
-  position: absolute;
   right: 0;
+  text-align: end;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .footer__copyright {
-    position: relative;
+    text-align: start;
     font-size: 14px;
     line-height: 14px;
   }
