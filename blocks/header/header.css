@@ -8,7 +8,6 @@
   -ms-grid-columns: -webkit-min-content 1fr -webkit-min-content -webkit-min-content;
   -ms-grid-columns: min-content 1fr min-content min-content;
   grid-template: 1fr/min-content 1fr -webkit-min-content -webkit-min-content;
-  -ms-grid-columns: min-content 1fr min-content min-content;
   grid-template: 1fr/min-content 1fr min-content min-content;
   grid-template-areas:
   "logo . ru en";
