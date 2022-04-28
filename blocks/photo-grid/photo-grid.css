@@ -16,7 +16,7 @@
   grid-template: repeat(3, minmax(min-content, max-content))/repeat(4, minmax(min-content, max-content));
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (max-width: 1279px) {
   .photo-grid {
     -ms-grid-rows: minmax(-webkit-min-content, -webkit-max-content) 14px minmax(-webkit-min-content, -webkit-max-content) 14px minmax(-webkit-min-content, -webkit-max-content) 14px minmax(-webkit-min-content, -webkit-max-content);
     -ms-grid-rows: minmax(min-content, max-content) 14px minmax(min-content, max-content) 14px minmax(min-content, max-content) 14px minmax(min-content, max-content);
@@ -28,7 +28,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .photo-grid {
     width: calc(100% - 2 * 24px);
     -ms-grid-rows: minmax(-webkit-min-content, -webkit-max-content) 16px minmax(-webkit-min-content, -webkit-max-content) 16px minmax(-webkit-min-content, -webkit-max-content) 16px minmax(-webkit-min-content, -webkit-max-content) 16px minmax(-webkit-min-content, -webkit-max-content) 16px minmax(-webkit-min-content, -webkit-max-content);
@@ -42,7 +42,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .photo-grid {
     width: calc(100% - 2 * 16px);
     -ms-grid-rows: minmax(-webkit-min-content, -webkit-max-content) 12px minmax(-webkit-min-content, -webkit-max-content) 12px minmax(-webkit-min-content, -webkit-max-content) 12px minmax(-webkit-min-content, -webkit-max-content) 12px minmax(-webkit-min-content, -webkit-max-content) 12px minmax(-webkit-min-content, -webkit-max-content) 12px minmax(-webkit-min-content, -webkit-max-content) 12px minmax(-webkit-min-content, -webkit-max-content) 12px minmax(-webkit-min-content, -webkit-max-content) 12px minmax(-webkit-min-content, -webkit-max-content) 12px minmax(-webkit-min-content, -webkit-max-content) 12px minmax(-webkit-min-content, -webkit-max-content);

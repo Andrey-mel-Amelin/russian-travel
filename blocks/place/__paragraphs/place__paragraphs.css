@@ -1,11 +1,8 @@
 .place__paragraphs {
   grid-area: paragraphs;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .place__paragraphs {
     width: calc(100% - 2 * 16px);
     margin: 0 auto;
