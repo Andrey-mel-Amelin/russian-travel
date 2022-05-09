@@ -6,12 +6,13 @@
   display: -ms-grid;
   display: grid;
   gap: 48px 40px;
-  -ms-grid-columns: 1fr 40px 1fr;
-  grid-template: repeat(2, -webkit-min-content)/repeat(2, 1fr);
-  grid-template: repeat(2, min-content)/repeat(2, 1fr);
-  grid-template-areas: 
-  "title website"
-  "image paragraphs";
+  -ms-grid-columns: 1fr 40px minmax(-webkit-min-content, 484px);
+  -ms-grid-columns: 1fr 40px minmax(min-content, 484px);
+  grid-template: repeat(2, -webkit-min-content)/1fr minmax(-webkit-min-content, 484px);
+  grid-template: repeat(2, min-content)/1fr minmax(min-content, 484px);
+  grid-template-areas:
+    "title website"
+    "image paragraphs";
   height: -webkit-max-content;
   height: -moz-max-content;
 }
@@ -19,12 +20,17 @@
 @media screen and (max-width: 1279px) {
   .place {
     gap: 48px 32px;
+    -ms-grid-columns: 1fr 32px minmax(-webkit-min-content, 456px);
+    -ms-grid-columns: 1fr 32px minmax(min-content, 456px);
+    grid-template-columns: 1fr minmax(-webkit-min-content, 456px);
+    grid-template-columns: 1fr minmax(min-content, 456px);
   }
 }
 
 @media screen and (max-width: 1023px) {
   .place {
     gap: 48px 28px;
+    grid-template-columns: 1fr minmax(min-content, 352px);
   }
 }
 
